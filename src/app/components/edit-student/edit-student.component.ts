@@ -26,6 +26,7 @@ export class EditStudentComponent implements OnInit {
   studentForm!: FormGroup;
   subjectArray: Subject[] = [];
   SectioinArray: any = ['A', 'B', 'C', 'D', 'E'];
+  selectedValue: string | undefined;
 
   ngOnInit() {
     this.updateBookForm();

@@ -1,5 +1,3 @@
-app.component.html file and include the following code.
-
 <!-- Toolbar -->
 <mat-toolbar color="primary" class="header">
   <div>Student Records</div>
@@ -11,7 +9,7 @@ app.component.html file and include the following code.
 <mat-sidenav-container>
   <!-- Sidenav -->
   <mat-sidenav #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" [fixedInViewport]="true"
-    [fixedTopGap]>
+    [fixedTopGap]=55>
     <mat-nav-list>
       <a mat-list-item routerLinkActive="active" routerLink="/add-student">
         <mat-icon>add</mat-icon> Add Student
